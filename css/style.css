@@ -128,13 +128,13 @@ body {
 
 .tag {
   display: inline-block;
-  padding: 4px 12px;          /* vertical | horizontal */
-  border-radius: 4px;       /* pill shape */
+  padding: 4px 12px;        
+  border-radius: 4px;     
   background: var(--yellow);
   color: var(--gray-950);
   font-family: var(--font-family-base);
   font-size: 12px;
-  font-weight: 800;           /* ExtraBold like Figma */
+  font-weight: 800; 
   line-height: 1;   
 
 }
