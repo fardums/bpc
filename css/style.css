@@ -1,0 +1,139 @@
+:root {
+  --gray-950: #111111;
+  --gray-500: #6B6B6B;
+  --yellow: #F4D04E;
+  --white: #FFFFFF;
+  --font-family-base: 'Figtree', sans-serif;
+
+  --text-preset-1-size: 24px;
+  --text-preset-1-line: 1.5;  /* 150% */
+  --text-preset-1-weight: 800;
+
+  --text-preset-2-size: 16px;
+  --text-preset-2-line: 1.5;
+  --text-preset-2-weight: 500;
+
+  --text-preset-3-size: 14px;
+  --text-preset-3-line: 1.5;
+  --text-preset-3-weight: 500;
+
+  --text-preset-3-bold-weight: 800;
+
+  /* Letter spacing */
+  --letter-spacing-0: 0;
+
+  /* Spacing scale */
+  --space-300: 24px;
+  --space-150: 12px;
+  --space-100: 8px;
+  --space-50: 4px;
+}
+
+.text-preset-1 {
+  font-family: var(--font-family-base);
+  font-size: var(--text-preset-1-size);
+  line-height: var(--text-preset-1-line);
+  font-weight: var(--text-preset-1-weight);
+  letter-spacing: var(--letter-spacing-0);
+  color: var(--yellow);
+}
+
+.text-preset-2 {
+  font-family: var(--font-family-base);
+  font-size: var(--text-preset-2-size);
+  line-height: var(--text-preset-2-line);
+  font-weight: var(--text-preset-2-weight);
+  letter-spacing: var(--letter-spacing-0);
+  color: var(--gray-500);
+}
+
+.text-preset-3 {
+  font-family: var(--font-family-base);
+  font-size: var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line);
+  font-weight: var(--text-preset-3-weight);
+  letter-spacing: var(--letter-spacing-0);
+  color: var(--gray-950);
+}
+
+.text-preset-3-bold {
+  font-family: var(--font-family-base);
+  font-size: var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line);
+  font-weight: var(--text-preset-3-bold-weight);
+  letter-spacing: var(--letter-spacing-0);
+  color: var(--gray-950);
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+
+  background: var(--yellow);
+}
+
+
+
+.content-card {
+      background: var(--white);
+      width: 100%;
+      max-width: 384px;
+      height: auto;
+      display: flex;
+      flex-direction: column; 
+      gap: 24px;
+      padding: 24px 24px 24px 24px;
+      background: var(--white);
+      border: 1px solid var(--gray-950);
+      border-radius: 20px;
+      box-shadow: 8px 8px 0 #000000;
+
+}
+
+.content-card:hover {
+  cursor: pointer;
+}
+
+.content {
+  text-align: left;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;          /* vertical | horizontal */
+  border-radius: 4px;       /* pill shape */
+  background: var(--yellow);
+  color: var(--gray-950);
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 800;           /* ExtraBold like Figma */
+  line-height: 1;   
+
+}
+
+.media-card{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.author-name {
+  gap: 12px;
+  text-align: left;
+  height: auto;
+  width: auto;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+}
